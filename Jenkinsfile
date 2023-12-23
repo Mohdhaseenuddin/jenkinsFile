@@ -3,7 +3,7 @@ pipeline {
 
     tools {
         // Install the Maven version configured as "M3" and add it to the path.
-        maven "Maven"
+        maven "maven"
     }
 
     stages {
@@ -30,7 +30,3 @@ pipeline {
         }
     }
 }
-
-builds.failFast = failFast
-parallel builds
-infra.maybePublishIncrementals()
